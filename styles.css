@@ -1,38 +1,49 @@
 :root {
-  --bg-start: #f5f7ff;
-  --bg-end: #ffffff;
-  --accent: #6c63ff;
-  --muted: #6b7280;
-  --card: #ffffff;
+  --bg: #000000;
+  --bg2: #251747;
+  --cd: #2e1d4e;
+  --tx: #ffffff;
+  --tx2: #a79292;
+  --tt: #f8f8f8;
+}
+
+body.l {
+  --bg: #ffffff;
+  --bg2: #e0e0e0;
+  --cd: #ffffff;
+  --tx: #1a1a1a;
+  --tx2: #555555;
+  --tt: #000000;
 }
 
 * { box-sizing: border-box; }
 html, body { height: 100%; }
+
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
-  color: #0f172a;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(135deg, var(--bg) 0%, var(--bg2) 100%);
+  color: var(--tx);
+  transition: background 0.3s, color 0.3s;
 }
 
-header {
-  padding: 56px 20px 28px;
-  text-align: center;
+/* --- HEADER --- */
+header { padding: 56px 20px 28px; text-align: center; }
+header h1 { margin: 0; font-size: 2rem; color: var(--tt); }
+header p { margin: 8px 0 0; color: var(--tx2); }
+
+#btnT {
+  background: none;
+  border: 1px solid var(--tt);
+  color: var(--tt);
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px; /* Espaço extra pois ficou sozinho */
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-  letter-spacing: -0.5px;
-}
-
-header p {
-  margin: 8px 0 0;
-  color: var(--muted);
-}
-
+/* --- CONTEÚDO --- */
 main {
   max-width: 960px;
   margin: 24px auto;
@@ -42,53 +53,92 @@ main {
 }
 
 section {
-  background: var(--card);
+  background: var(--cd);
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 8px 20px rgba(15,23,42,0.06);
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
 }
+section:hover { transform: translateY(-4px); }
 
-section:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 34px rgba(15,23,42,0.09);
+section h2 { margin: 0 0 15px; color: var(--tt); text-align: center; }
+section p, section ul { color: var(--tx2); line-height: 1.6; }
+
+/* Links de Download (Cursos) */
+.down-link {
+  color: var(--tt);
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+  cursor: pointer;
 }
+.down-link:hover { text-decoration: underline; }
 
-section h2 {
-  margin: 0 0 8px;
-  font-size: 1.125rem;
-  color: #111827;
-}
-
-section p,
-section ul {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-ul { padding-left: 1.25rem; }
-
-footer {
+/* --- RODAPÉ --- */
+.contact-footer {
+  width: 100%;
+  background: var(--cd);
+  padding: 50px 20px 20px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
-  padding: 28px 20px;
-  color: var(--muted);
-  font-size: 0.95rem;
 }
 
-.muted {
-  color: var(--muted);
+.center-content { max-width: 960px; margin: 0 auto; }
+.contact-footer h2 { color: var(--tt); font-size: 1.8rem; margin-bottom: 10px; }
+.contact-footer p { color: var(--tx2); margin-bottom: 30px; }
+
+/* Lista de Botões Centralizada */
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* CENTRALIZA OS BOTÕES */
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+/* Estilo padrão dos botões */
+.social a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--tt);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Destaque para o botão de Currículo */
+.social a.cv-highlight {
+  background: var(--tt); /* Fundo preenchido */
+  color: var(--bg);      /* Texto invertido */
+  border-color: var(--tt);
+}
+
+.social a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Hover específico para os botões normais ficarem cheios */
+.social a:not(.cv-highlight):hover {
+  background: var(--tt);
+  color: var(--bg);
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
 
 @media (min-width: 900px) {
-  main { grid-template-columns: 1fr 1fr; gap: 24px; }
-  /* make the third section span full width */
-  main section:nth-child(3) { grid-column: 1 / -1; }
+  main { grid-template-columns: 1fr 1fr; }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
-}
-
-/* small utility */
-.center { text-align: center; }

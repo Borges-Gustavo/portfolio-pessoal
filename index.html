@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Gustavo Borges | Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Gustavo B. Duarte | Portfólio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 </head>
 <body>
-
+  
   <header>
-    <h1>Gustavo Borges</h1>
-    <p>Estudante de informática | Desenvolvimento de software e web</p>
+    <h1>Gustavo Borges Duarte</h1>
+    <p>Estudante de informática (IFRS, campus farroupilha)</p>
+    <br>
+    <button id="btnT">Light mode</button>
   </header>
-
+  
   <main>
     <section>
       <h2>Sobre mim</h2>
@@ -25,10 +29,25 @@
     <section>
       <h2>O que estou estudando</h2>
       <ul>
-        <li>Programação</li>
-        <li>Desenvolvimento Web</li>
-        <li>Lógica de Programação</li>
-        <li>Banco de Dados</li>
+        <li>Desenvolvimento Web (Intermediário)</li>
+        <li>JavaScript (Básico)</li>
+        <li>Python (Básico)</li>
+        <li>Banco de Dados (Básico)</li>
+      </ul>
+    </section>
+    
+    <section> 
+      <h2>Cursos</h2>
+      <ul>
+        <li>Desenvolvimento Web - Fundação Bradesco 
+          <a href="Docs/Certificado-Web.pdf" download class="down-link">(Concluído)</a>
+        </li>
+        
+        <li>Excel - CIEE 
+          <a href="Docs/Certificado-Excel.pdf" download class="down-link">(Concluído)</a>
+        </li>
+        
+        <li>Inglês - CCAA (Andamento)</li>
       </ul>
     </section>
 
@@ -38,8 +57,46 @@
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Gustavo Borges</p>
+  <footer class="contact-footer">
+    <div class="center-content">
+      <h2>Contato e Currículo</h2>
+      <p>Entre em contato ou baixe meu CV abaixo:</p>
+      
+      <ul class="social">
+        <li>
+          <a href="Docs/CurrículoGustavo.pdf" download class="cv-highlight">
+            <i class="fa-solid fa-file-pdf"></i> Baixar Currículo
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:gustavoborgesduarte74@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/5554999338412" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/gustavo-borges-duarte-78a562346/?originalSubdomain=br" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Borges-Gustavo" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </li>
+      </ul>
+
+      <div class="copyright">
+        <p>© 2026 Gustavo Borges Duarte</p>
+      </div>
+    </div>
   </footer>
+
+  <script src="scr.js"></script>
 </body>
 </html>
