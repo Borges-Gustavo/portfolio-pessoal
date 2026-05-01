@@ -1,21 +1,28 @@
-# Portfólio Pessoal
+# 💻 Portfólio Pessoal | Gustavo Borges Duarte
 
-Este repositório contém meu site de portfólio pessoal. Sou estudante de informática no IFRS (Campus Farroupilha) e desenvolvi este projeto para colocar em prática meus estudos.
+Este é o repositório do meu site pessoal, onde apresento minha trajetória como estudante de informática e desenvolvedor. 
 
-O objetivo foi criar uma estrutura organizada e semântica, aplicando conceitos de design responsivo e manipulação básica do navegador.
 
-Tecnologias utilizadas:
+## 🛠 Tecnologias Utilizadas
+* **HTML5**: Estruturação semântica para SEO e acessibilidade.
+* **CSS3**: Layouts modernos com **Flexbox**, **Grid** e uso de **CSS Variables** para o sistema de temas.
+* **JavaScript (ES6+)**: Manipulação de DOM para o modo Dark/Light e navegação.
+* **Font Awesome**: Iconografia profissional.
 
-- HTML5 (Estruturação semântica)
-- CSS3 (Flexbox, Grid Layout e Variáveis)
-- JavaScript (Alternância de temas Claro e Escuro)
-- Font Awesome (Ícones de contato)
+## 🌟 Funcionalidades
+- [x] **Dark Mode**: Alternância dinâmica de cores preservando a experiência do usuário.
+- [x] **Responsividade**: Interface adaptada para Desktop, Tablets e Smartphones.
+- [x] **Download de Assets**: Links diretos para Currículo e Certificados em PDF.
+- [x] **Carrossel de Projetos**: Exibição organizada dos meus principais trabalhos.
 
-Funcionalidades do site:
+## 📖 Como visualizar
+1. Clone o repositório.
+2. Abra o arquivo `index.html` em qualquer navegador moderno.
+3. Ou acesse online: [https://www.dgborges.tech/](https://www.dgborges.tech/)
 
-- Botão para alternar entre modo Claro e Escuro
-- Links diretos para baixar currículo e certificados
-- Rodapé com links para redes sociais e contato
-- Layout que se adapta a celulares e computadores
+## 🎓 Formação Principal
+* Técnico em Informática - IFRS (2024 - 2027)
+* Técnico em Cibersistemas para Automação - SENAI (2024 - 2027)
 
-Desenvolvido por Gustavo Borges Duarte.
+---
+Desenvolvido com ❤️ por [Gustavo Borges Duarte](https://github.com/Borges-Gustavo)

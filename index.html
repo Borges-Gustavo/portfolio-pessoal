@@ -10,92 +10,218 @@
 </head>
 <body>
   
-  <header>
-    <h1>Gustavo Borges Duarte</h1>
-    <p>Estudante de informática (IFRS, campus farroupilha)</p>
-    <br>
-    <button id="btnT">Light mode</button>
-  </header>
-  
-  <main>
-    <section>
-      <h2>Sobre mim</h2>
-      <p>
-        Sou estudante de informática e estou construindo meu portfólio para
-        apresentar meus estudos, projetos e as tecnologias que venho aprendendo.
-      </p>
-    </section>
-
-    <section>
-      <h2>O que estou estudando</h2>
-      <ul>
-        <li>Desenvolvimento Web (Intermediário)</li>
-        <li>JavaScript (Básico)</li>
-        <li>Python (Básico)</li>
-        <li>Banco de Dados (Básico)</li>
-      </ul>
-    </section>
-    
-    <section> 
-      <h2>Cursos</h2>
-      <ul>
-        <li>Desenvolvimento Web - Fundação Bradesco 
-          <a href="Docs/Certificado-Web.pdf" download class="down-link">(Concluído)</a>
-        </li>
-        
-        <li>Excel - CIEE 
-          <a href="Docs/Certificado-Excel.pdf" download class="down-link">(Concluído)</a>
-        </li>
-        
-        <li>Inglês - CCAA (Andamento)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projetos</h2>
-      <p>Em breve.</p>
-    </section>
-  </main>
-
-  <footer class="contact-footer">
-    <div class="center-content">
-      <h2>Contato e Currículo</h2>
-      <p>Entre em contato ou baixe meu CV abaixo:</p>
-      
-      <ul class="social">
-        <li>
-          <a href="Docs/CurrículoGustavo.pdf" download class="cv-highlight">
-            <i class="fa-solid fa-file-pdf"></i> Baixar Currículo
-          </a>
-        </li>
-
-        <li>
-          <a href="mailto:gustavoborgesduarte74@gmail.com">
-            <i class="fa-solid fa-envelope"></i> Email
-          </a>
-        </li>
-        <li>
-          <a href="https://wa.me/5554999338412" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i> WhatsApp
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/gustavo-borges-duarte-78a562346/?originalSubdomain=br" target="_blank">
-            <i class="fa-brands fa-linkedin"></i> LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Borges-Gustavo" target="_blank">
-            <i class="fa-brands fa-github"></i> GitHub
-          </a>
-        </li>
-      </ul>
-
-      <div class="copyright">
-        <p>© 2026 Gustavo Borges Duarte</p>
+  <div class="container-wrapper">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>Gustavo Borges Duarte</h1>
+        <p class="subtitle">Estudante de informática</p>
       </div>
-    </div>
-  </footer>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#sobre"><i class="fas fa-user"></i> Sobre Mim</a></li>
+          <li><a href="#cursos"><i class="fas fa-certificate"></i> Cursos</a></li>
+          <li><a href="#projetos"><i class="fas fa-code"></i> Projetos</a></li>
+          <li><a href="#habilidades"><i class="fas fa-tools"></i> Habilidades</a></li>
+          <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+      </nav>
+
+      <button id="btnT" class="theme-btn">
+        <i class="fas fa-sun"></i> Light mode
+      </button>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- SOBRE MIM -->
+      <section id="sobre" class="content-section">
+        <div class="section-header">
+          <h2>Sobre Mim</h2>
+          <span class="accent-line"></span>
+        </div>
+        <p class="section-description">
+            
+          Sou desenvolvedor apaixonado por criar soluções web inovadoras. <br>Com base sólida em HTML, CSS e JavaScript, exploro frameworks modernos,<br>
+            design responsivo e acessibilidade. Meus projetos combinam teoria com prática <br> desde sites funcionais a aplicações dinâmicas em JavaScript e automações em Python.
+            <br> <br>
+            Tambem sou estudante de informática, atualmente cursando Técnico em Informática no IFRS Campus Farroupilha e Técnico em Cibersistemas para Automação no SENAI Mecatrônica, com conclusão prevista para dezembro de 2027. <br> Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para criar projetos cada vez mais interessantes e impactantes.
+        </p>
+      </section>
+
+      <!-- HABILIDADES (movido de 'Estudando') -->
+      <section id="habilidades" class="content-section">
+        <div class="section-header">
+          <h2>Habilidades</h2>
+          <span class="accent-line"></span>
+        </div>
+        <p class="section-description">Aqui estão as principais habilidades que venho desenvolvendo e aplicando em projetos:</p>
+        <ul class="skill-list">
+          <li>Desenvolvimento Web (HTML, CSS, JavaScript)</li>
+          <li>Java (fundamentos e programação orientada a objetos)</li>
+          <li>Python (scripts utilitários e automações)</li>
+          <li>Lua (Jogos (modding), engines e extensões)</li>
+          <li>SQL (modelagem relacional, consultas, JOINs, noções de otimização)</li>
+          <li>GIT / Github (controle de versão, branches, commits, pull requests)</li>
+          <li>Bancos de Dados (fundamentos e consultas básicas)</li>
+          <li>C# (fundamentos e programação orientada a objetos)</li>
+        </ul>
+      </section>
+
+      <!-- CURSOS -->
+      <section id="cursos" class="content-section">
+        <div class="section-header">
+          <h2>Cursos</h2>
+          <span class="accent-line"></span>
+        </div>
+        <ul class="courses-list">
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Desenvolvimento Web - Fundação Bradesco
+            <a href="Docs/Certificado-Web.pdf" download class="down-link">Certificado</a>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Excel - CIEE
+            <a href="Docs/Certificado-Excel.pdf" download class="down-link">Certificado</a>
+          </li>
+          <li>
+            <i class="fas fa-hourglass-end"></i>
+            Inglês - CCAA (Andamento)
+          </li>
+          <li>
+            <i class="fas fa-hourglass-end"></i>
+            Técnico em Informática - IFRS Campus Farroupilha (Conclusão: 12/2027)
+          </li>
+          <li>
+            <i class="fas fa-hourglass-end"></i>
+            Técnico em Cibersistemas para Automação - SENAI Mecatrônica (Conclusão: 12/2027)
+          </li>
+        </ul>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos" class="content-section projects-section">
+        <div class="section-header">
+          <h2>Projetos</h2>
+          <span class="accent-line"></span>
+        </div>
+        <p class="section-description">Projetos em desenvolvimento e concluídos. Mais projetos em breve!</p>
+        <div class="projects-wrapper">
+          <button class="projects-nav projects-nav-prev" id="projectsPrev" aria-label="Projeto anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="projects-grid" id="projectsGrid">
+            <article class="project-card">
+              <div class="project-image">
+                <i class="fas fa-code"></i>
+                <div class="project-overlay">
+                  <a href="https://educore.dgborges.tech/" class="overlay-btn" target="_blank" title="Ver Site"><i class="fas fa-external-link-alt"></i> Ver Site</a>
+                  <a href="projects/educore.html" class="overlay-btn" title="Ver Sobre"><i class="fas fa-info-circle"></i> Ver Sobre</a>
+                </div>
+              </div>
+              <h3>EduCore</h3>
+              <p>Sistema desenvolvido em C# para gerenciamento de alunos e controle administrativo, permitindo
+                 cadastro, listagem e remoção de registros com diferentes níveis de permissão.</p>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <i class="fas fa-code"></i>
+                <div class="project-overlay">
+                  <a href="https://guerra.dgborges.tech/" class="overlay-btn" target="_blank" title="Ver Site"><i class="fas fa-external-link-alt"></i> Ver Site</a>
+                  <a href="projects/minecraftwar3.html" class="overlay-btn" title="Ver Sobre"><i class="fas fa-info-circle"></i> Ver Sobre</a>
+                </div>
+              </div>
+              <h3>MinecraftWar3</h3>
+              <p>Sistema web desenvolvido para gerenciamento de guerras e eventos de Minecraft,
+                 permitindo organização de times, pontuação, rankings, eventos e gerenciamento de jogadores em tempo real.</p>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <i class="fas fa-code"></i>
+                <div class="project-overlay">
+                  <a href="https://greekpedia.dgborges.tech/" class="overlay-btn" target="_blank" title="Ver Site"><i class="fas fa-external-link-alt"></i> Ver Site</a>
+                  <a href="projects/greekpedia.html" class="overlay-btn" title="Ver Sobre"><i class="fas fa-info-circle"></i> Ver Sobre</a>
+                </div>
+              </div>
+              <h3>Greekpedia</h3>
+              <p>Plataforma web dedicada ao universo da mitologia grega, reunindo histórias, personagens
+                 e criaturas lendárias em uma experiência interativa e organizada.</p>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <i class="fas fa-code"></i>
+                <div class="project-overlay">
+                  <a href="https://www.dgborges.tech/" class="overlay-btn" target="_blank" title="Ver site"><i class="fas fa-external-link-alt"></i> Repositório</a>
+                  <a href="projects/portfolio.html" class="overlay-btn" title="Ver Sobre"><i class="fas fa-info-circle"></i> Ver Sobre</a>
+                </div>
+              </div>
+              <h3>Portfólio</h3>
+              <p>Portfólio pessoal responsivo com tema roxo e verde, sidebar navegável, e seções dinâmicas
+                 para apresentar habilidades, projetos, cursos e contato — desenvolvido com HTML, CSS e JavaScript.</p>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <i class="fas fa-code"></i>
+                <div class="project-overlay">
+                  <a href="#" class="overlay-btn" title="Ver Site"><i class="fas fa-external-link-alt"></i> Ver Site</a>
+                  <a href="projects/indefinido.html" class="overlay-btn" title="Ver Sobre"><i class="fas fa-info-circle"></i> Ver Sobre</a>
+                </div>
+              </div>
+              <h3>Indefinido</h3>
+              <p>Projeto em planejamento. Ideia a definir — em breve este espaço será preenchido com
+                 um novo projeto interessante!</p>
+            </article>
+          </div>
+          <button class="projects-nav projects-nav-next" id="projectsNext" aria-label="Próximo projeto">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="content-section contact-section">
+        <div class="section-header">
+          <h2>Contato e Currículo</h2>
+          <span class="accent-line"></span>
+        </div>
+        <p class="section-description">Entre em contato ou baixe meu CV abaixo:</p>
+        
+        <ul class="social-list">
+          <li>
+            <a href="Docs/CurrículoGustavo.pdf" download class="social-link cv-highlight">
+              <i class="fa-solid fa-file-pdf"></i> Currículo
+            </a>
+          </li>
+          <li>
+            <a href="mailto:gustavoborgesduarte74@gmail.com" class="social-link">
+              <i class="fa-solid fa-envelope"></i> Email
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5554999338412" target="_blank" class="social-link">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gustavo-borges-duarte-78a562346/?originalSubdomain=br" target="_blank" class="social-link">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Borges-Gustavo" target="_blank" class="social-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </li>
+        </ul>
+
+        <div class="copyright">
+          <p>© 2026 Gustavo Borges Duarte</p>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script src="scr.js"></script>
 </body>

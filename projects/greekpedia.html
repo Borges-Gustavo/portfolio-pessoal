@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greekpedia - Projeto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .project-detail-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .project-header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .project-header-icon {
+      font-size: 80px;
+      color: var(--accent);
+      min-width: 100px;
+      text-align: center;
+    }
+
+    .project-header-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: var(--tx);
+    }
+
+    .project-header-content p {
+      font-size: 1.1rem;
+      color: var(--tx2);
+      line-height: 1.6;
+    }
+
+    .project-section {
+      margin-bottom: 40px;
+    }
+
+    .project-section h2 {
+      font-size: 1.8rem;
+      color: var(--accent);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .project-section ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .project-section li {
+      padding: 10px 0;
+      color: var(--tx);
+      line-height: 1.8;
+      border-left: 3px solid var(--accent-secondary);
+      padding-left: 15px;
+      margin-bottom: 10px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .tech-badge {
+      background: rgba(179, 102, 255, 0.2);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: var(--accent-secondary);
+      gap: 15px;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(179, 102, 255, 0.2);
+    }
+
+    .project-btn {
+      flex: 1;
+      padding: 15px 20px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .project-btn:hover {
+      background: var(--accent-secondary);
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      .project-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .project-header-icon {
+        margin-bottom: 20px;
+      }
+
+      .project-header-content h1 {
+        font-size: 2rem;
+      }
+
+      .project-links {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="project-detail-container">
+    <a href="../index.html#projetos" class="back-link">
+      <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
+    </a>
+
+    <div class="project-header">
+      <div class="project-header-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <div class="project-header-content">
+        <h1>Greekpedia</h1>
+        <p>Enciclopédia Interativa da Mitologia Grega</p>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2><i class="fas fa-info-circle"></i> Sobre o Projeto</h2>
+      <p>Greekpedia é uma plataforma web dedicada ao fascinante universo da mitologia grega. O projeto reúne histórias clássicas, personagens mitológicos, criaturas lendárias e deuses do Olimpo em uma experiência interativa e bem organizada.</p>
+      <p>Ideal para estudantes, entusiastas da mitologia e educadores que buscam uma fonte confiável e envolvente sobre a mitologia grega. Com interface intuitiva e conteúdo organizado, torna o aprendizado sobre a cultura grega antiga acessível e divertido.</p>
+    </div>
+
+    <div class="project-section">
+      <h2><i class="fas fa-cogs"></i> Tecnologias Utilizadas</h2>
+      <div class="tech-stack">
+        <span class="tech-badge">HTML5</span>
+        <span class="tech-badge">CSS3</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">Responsive Design</span>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2><i class="fas fa-star"></i> Recursos Principais</h2>
+      <ul>
+        <li><strong>Personagens Mitológicos:</strong> Base de dados completa com deuses, semideuses e heróis da mitologia grega</li>
+        <li><strong>Criaturas Lendárias:</strong> Informações sobre monstros, bestas mitológicas e criaturas do mundo grego</li>
+        <li><strong>Histórias e Lendas:</strong> Narrativas dos mitos gregos mais famosos e suas variações históricas</li>
+        <li><strong>Galeria de Imagens:</strong> Ilustrações e representações artísticas dos personagens e eventos mitológicos</li>
+        <li><strong>Interface Interativa:</strong> Design envolvente que torna o aprendizado agradável e acessível</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2><i class="fas fa-target"></i> Objetivos Alcançados</h2>
+      <ul>
+        <li>Criar uma enciclopédia digital completa e acessível sobre mitologia grega</li>
+        <li>Desenvolver interface educativa e envolvente</li>
+        <li>Organizar informações de forma lógica e fácil de navegar</li>
+        <li>Demonstrar habilidades em desenvolvimento web e design de conteúdo</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2><i class="fas fa-graduation-cap"></i> O que Aprendi</h2>
+      <ul>
+        <li>Estruturação eficiente de grandes volumes de dados em aplicações web</li>
+        <li>Design responsivo para melhor experiência educativa</li>
+        <li>Organização de conteúdo complexo de forma clara e acessível</li>
+        <li>Otimização de performance para sites com muito conteúdo</li>
+      </ul>
+    </div>
+
+    <div class="project-links">
+      <a href="https://greekpedia.dgborges.tech/" class="project-btn" target="_blank">
+        <i class="fas fa-external-link-alt"></i> Ver Projeto
+      </a>
+      <a href="https://github.com/Borges-Gustavo" class="project-btn" target="_blank">
+        <i class="fab fa-github"></i> Código no GitHub
+      </a>
+    </div>
+  </div>
+</body>
+</html>
